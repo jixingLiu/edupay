@@ -44,9 +44,9 @@ const PaymentPage: React.FC = () => {
       <div className="w-full max-w-lg bg-white p-6 rounded-lg shadow-lg">
         {!isPaid ? (
           <>
-            <div className="text-center text-2xl font-bold text-gray-800 mb-4">缴费易收银台</div>
+            <div className="text-center text-xl font-bold text-gray-800 mb-2">缴费易收银台</div>
 
-            <div className="text-center text-lg text-gray-600 mb-6">
+            <div className="text-center text-lg text-gray-600 mb-2">
               支付剩余时间 <span className="text-red-500 font-semibold">14:35:49</span>
             </div>
 
@@ -98,7 +98,7 @@ const PaymentPage: React.FC = () => {
           </div>
         )}
 
-        <div className="text-center text-xs text-gray-400 mt-6">v1.52.0</div>
+        <div className="text-center text-xs text-gray-400 mt-6">v1.0.0</div>
       </div>
 
       <Modal

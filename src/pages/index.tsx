@@ -73,12 +73,12 @@ const SchoolMajorClassForm = () => {
     <div className='pb-4'>
       <div className="text-xl bg-[#2563eb] text-center text-white leading-[56px] mb-3">缴费系统</div>
       <Form
-        className='pr-4'
+        className='pr-2'
         form={form}
         onFinish={handleGenerateQRCode}
         footer={
-          <Button block type="submit" color="primary">
-            购买 <span className=' font-semibold text-white'>￥{totalAmount.toFixed(2)}</span>
+          <Button block type="submit" color="warning">
+            确定 <span className=' font-semibold text-white'>￥{totalAmount.toFixed(2)}</span>
           </Button>
         }
       >
@@ -128,8 +128,8 @@ const SchoolMajorClassForm = () => {
           </Form.Item>
         </Space>
 
-        <div className="text-gray-600 text-right">
-          <span className=" font-sans">总金额：</span>￥{totalAmount.toFixed(2)}
+        <div className=" text text-right text-red-600">
+          <span className="  font-sans">总金额：</span>￥{totalAmount.toFixed(2)}
         </div>
 
         <Form.Item name="name" label="姓名" rules={[{ required: true, message: '请输入姓名' }]}>

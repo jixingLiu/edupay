@@ -110,17 +110,17 @@ const SchoolMajorClassForm = () => {
         </Form.Item>
 
         <Space align="center">
-          <Form.Item name="bookSets" label="课本套数" rules={[
-            { required: true, message: '请输入课本套数' },
-            { pattern: /^[1-9]\d*$/, message: '课本套数必须为大于0的整数' }
+          <Form.Item name="bookSets" label="数量" rules={[
+            { required: true, message: '请输入数量' },
+            { pattern: /^[1-9]\d*$/, message: '课本数量必须为大于0的整数' }
           ]}>
             <Input
-              placeholder="请输入课本套数"
+              placeholder="请输入数量"
               onChange={handleAmountChange}
             />
           </Form.Item>
 
-          <Form.Item name="amount" className=' pointer-events-none' label="单套金额" rules={[
+          <Form.Item name="amount" label="金额/套" rules={[
             { required: true, message: '请输入金额' },
             { pattern: /^[0-9]+(\.[0-9]{1,2})?$/, message: '请输入有效的金额' }
           ]}>
@@ -143,9 +143,7 @@ const SchoolMajorClassForm = () => {
           <Input placeholder="请输入手机号" />
         </Form.Item>
 
-        <Form.Item name="idCard" label="身份证号" rules={[
-          { required: true, message: '请输入身份证号' },
-        ]}>
+        <Form.Item name="idCard" label="身份证号">
           <Input placeholder="请输入身份证号" />
         </Form.Item>
 

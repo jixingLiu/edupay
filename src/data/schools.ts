@@ -1,11 +1,11 @@
 const schools = [
   {
-    "label": "中医学专业",
-    "value": "中医学专业",
+    "label": "2024",
+    "value": "2024",
     "children": [
       {
-        "label": "2024",
-        "value": "2024",
+        "label": "中医学专业",
+        "value": "中医学专业",
         "children": [
           { "label": "1班", "value": "1班" },
           { "label": "2班", "value": "2班" },
@@ -14,16 +14,10 @@ const schools = [
           { "label": "5班", "value": "5班" },
           { "label": "6班", "value": "6班" }
         ]
-      }
-    ]
-  },
-  {
-    "label": "中药学专业",
-    "value": "中药学专业",
-    "children": [
+      },
       {
-        "label": "2024",
-        "value": "2024",
+        "label": "中药学专业",
+        "value": "中药学专业",
         "children": [
           { "label": "1班", "value": "1班" },
           { "label": "2班", "value": "2班" },
